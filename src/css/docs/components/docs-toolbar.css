@@ -19,7 +19,7 @@
 }
 
 .DocsToolbar--feedback {
-  display: flex;
+  display: none;
   align-items: center;
   padding: 0.5rem 1rem;
 }
