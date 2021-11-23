@@ -78,7 +78,7 @@ copysrc() {
 
   echo "Copying content into .docs/src/"
   mkdir ./content
-  cp -r ../../docs/ ./content/
+  cp -r ../../docs/* ./content/
 }
 
 
