@@ -78,7 +78,7 @@ copysrc() {
 
   echo "Copying content into .docs/src/"
   mkdir ./content
-  cp -r ../../docs/* ./content
+  cp -r ../../docs/ ./content/
 }
 
 
@@ -129,5 +129,5 @@ fi
 if [ "$1" = "savechanges" ]; then
   cd $project_path
 
-  cp -r .docs/src/content/* docs/
+  cp -r .docs/src/content/* docs/*
 fi
