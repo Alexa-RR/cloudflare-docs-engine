@@ -1,5 +1,4 @@
 import { getAssetFromKV, mapRequestToAsset } from '@cloudflare/kv-asset-handler'
-import analytics from 'workers-google-analytics'
 import redirector from 'lilredirector'
 
 const docsConfig = require("../docs-config.js")
@@ -45,10 +44,6 @@ async function handleEvent(event) {
     })
     if (response) return response
 
-    const analyticsResp = await analytics(event, {
-      allowList: ['developers.cloudflare.com'],
-    })
-    if (analyticsResp) return analyticsResp
 
     if (DEBUG) {
       // customize caching
