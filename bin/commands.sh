@@ -77,11 +77,12 @@ copysrc() {
   cd src
 
   echo "Copying content into .docs/src/"
+  rm -rf ../static
   rm -rf ./content
   mkdir ./content
   cp -r ../../docs/* ./content
-  mkdir ./content/pdf
-  mv ./content/designs/*.pdf ./content/pdf
+  mkdir ../static
+  mv ./content/designs/*.pdf ../static
 }
 
 
