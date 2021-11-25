@@ -36,7 +36,7 @@ if [ "$1" = "ghactionsbootstrap" ]; then
 
   echo "Running npm install inside .docs"
   npm install
-  git clone https://github.com/Alexa-RR/pdf.js.git node_modules/pdf.js
+  git clone https://github.com/Alexa-RR/pdf.js.git static/pdf.js
 fi
 
 
