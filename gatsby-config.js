@@ -2,53 +2,13 @@ const docsConfig = require("./docs-config.js")
 const isProduction = process.env.NODE_ENV === "production"
 
 const getProduct = (name) => {
-  const repo = "@cloudflare/cloudflare-brand-assets"
+  const repo = "@Alexa-RR/alexa-brand-assets"
   const dir = "resources/product-icons/"
   return `./node_modules/${repo}/${dir}/${name}.js`
 }
 
 const products = [
-  "1.1.1.1",
-  "access",
-  "analytics",
-  "api",
-  "automatic-platform-optimization",
-  "argo-tunnel",
-  "bots",
-  "byoip",
-  "cache",
-  "client-ip-geolocation",
-  "cloudflare-for-teams",
-  "cloudflare-one",
-  "distributed-web",
-  "docs-engine",
-  "events",
-  "firewall",
-  "fundamentals",
-  "gateway",
-  "http3",
-  "images",
-  "load-balancing",
-  "logs",
-  "magic-transit",
-  "magic-wan",
-  "mobile-sdk",
-  "network-interconnect",
-  "page-shield",
-  "railgun",
-  "randomness-beacon",
-  "registrar",
-  "rules",
-  "spectrum",
-  "ssl",
-  "stream",
-  "tenant",
-  "terraform",
-  "time-services",
-  "waf",
-  "waiting-room",
-  "warp-client",
-  "workers",
+  "CircuitsV2ResourcesV2"
 ]
 
 // TODO: Delete later
