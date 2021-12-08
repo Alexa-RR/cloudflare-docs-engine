@@ -12,7 +12,7 @@ export default () => {
       dangerouslySetInnerHTML={{ __html: logoSVGContent }}
     />
   ) : (
-    <AccessibleSVG title={`Cloudflare ${product} logo`} viewBox="0 0 48 48">
+    <AccessibleSVG title={`Alexa ${product} logo`} viewBox="0 0 48 48">
       <path d={productLogoPathD} />
     </AccessibleSVG>
   )
