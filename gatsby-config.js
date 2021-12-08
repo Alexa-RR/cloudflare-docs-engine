@@ -61,7 +61,7 @@ module.exports = {
           `gatsby-transformer-json`
         ]
       },
-    }
+    },
 
     // Sets page.updatedAt to the author time of last commit (https://git.io/JfPCj)
     "saber-plugin-git-modification-time",
