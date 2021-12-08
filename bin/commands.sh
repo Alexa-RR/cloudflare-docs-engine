@@ -76,6 +76,9 @@ copysrc() {
 
   echo "Entering .docs/src/"
   cd src
+  rm -rf cv2data
+  mkdir cv2data
+  cp ../../misc/circuitsv2.json ./cv2data
 
   echo "Copying content into .docs/src/"
   rm -rf ../static
