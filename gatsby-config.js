@@ -52,6 +52,16 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-remove-trailing-slashes",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `cv2chip`,
+        path: `${__dirname}/src/cv2data/`,
+        plugins: [
+          `gatsby-transformer-json`
+        ]
+      },
+    }
 
     // Sets page.updatedAt to the author time of last commit (https://git.io/JfPCj)
     "saber-plugin-git-modification-time",
