@@ -36,6 +36,7 @@ if [ "$1" = "ghactionsbootstrap" ]; then
 
   echo "Running yarn install inside .docs"
   yarn install --pure-lockfile
+  git clone https://github.com/Alexa-RR/pdf.js.git static/pdf.js
 fi
 
 
